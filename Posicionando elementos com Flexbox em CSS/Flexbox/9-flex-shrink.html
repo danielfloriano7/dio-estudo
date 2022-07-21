@@ -30,6 +30,17 @@
             flex-shrink: 1;
         }
 
+        .s-2{
+            flex-shrink: 2;
+           flex-basis: 100px;
+        }
+
+        .s-3{
+            flex-shrink: 3;
+           flex-basis: 100px;
+            
+        }
+
         .fg-1{
             flex-grow: 1;
         }
@@ -46,20 +57,28 @@
     </div>
     
     <div class="flex-container">
-        <div class="item s-1 fg-1">A</div>
+        <div class="    item s-1 fg-1">A</div>
         <div class="item s-1 fg-1">Lorem ipsum dolor </div>
         <div class="item s-1 fg-1">C</div>
         <div class="item s-1 fg-1">D</div>
 
     </div>
 
-    <p>flex-shrink: 0</p>
+    <p>flex-shrink: 0 / basis: 100px</p>
     <div class="flex-container">
         <div class="item s-0 fg-1">A</div>
         <div class="item s-0 fg-1">Lorem ipsum dolor </div>
         <div class="item s-0 fg-1">C ipsum dolor</div>
+        <div class="item s-0 fg-1">C ipsum dolor</div>
         <div class="item s-0 fg-1">D</div>
-        
+    </div>
+
+    <p>flex-shrink: mix / basis: 100px</p>
+    <div class="flex-container">
+        <div class="item s-1 fg-1">A</div>
+        <div class="item s-2 fg-1">Lorem ipsum dolor </div>
+        <div class="item s-2 fg-1">C ipsum dolor</div>
+        <div class="item s-3 fg-1">C ipsum dolor</div>
     </div>
 </body>
 </html>
