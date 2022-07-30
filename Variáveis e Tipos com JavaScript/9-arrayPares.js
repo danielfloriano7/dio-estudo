@@ -2,7 +2,7 @@ function substituiPares(number) {
     if (!number) return -1;
     if (!number.length) return -1;
 
-    for (let i = 0; i < number.length; i++) {
+    for (let i in number) {
         if (number[i] % 2 === 0) {
             number[i] = 0;
         }
