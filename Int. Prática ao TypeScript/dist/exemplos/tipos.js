@@ -9,4 +9,4 @@ function somarValores(input1, input2) {
 }
 console.log(somarValores(1, 6));
 console.log(somarValores('ola', ', tudo bem?'));
-console.log(somarValores('1', 6));
+console.log(somarValores('1s', 6));
