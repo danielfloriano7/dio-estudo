@@ -16,20 +16,25 @@ console.log(pessoa.fullN());
 console.log(pessoa.firstN); 
 console.log(pessoa.getId()); 
 console.log(this);
+
 console.log("-------------------");
 
 // Manipulando seu valor
 // Call
 const amigo = {
-    nome: 'Gui'
+    nome: 'Gui',
+    cpf: "213.412.422-21",
+    idade: 33,
 };
 
 const animal = {
     nome:'Mia'
 };
 
+
+
 function getSomethis() {
-    console.log(this.nome);
+    console.log(this);
 }
 
 getSomethis.call(amigo)
@@ -48,6 +53,9 @@ function soma(a, b) {
 soma.call(myNums, 10, 5)
 
 console.log("-------------------");
+
+
+
 //Apply
 const amigo2 = {
     nome: 'Gabriel'
@@ -57,12 +65,12 @@ const animal2 = {
     nome:'Frida'
 };
 
-function getSomethis() {
+function getSomethis2() {
     console.log(this.nome);
 }
 
-getSomethis.apply(amigo2)
-getSomethis.apply(animal2)
+getSomethis2.apply(amigo2)
+getSomethis2.apply(animal2)
 
 function soma2(a, b) {
     console.log(this.num1 + this.num2 + this.num3 + a + b);
